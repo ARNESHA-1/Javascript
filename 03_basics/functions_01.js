@@ -26,3 +26,15 @@ function add3(num1, num2){
 const result = add3(1,2)
 console.log(result)
 
+function userMsg(username ="sam"){ //default val if no value given
+   if(username == undefined){  // == (!username)
+      console.log(`Please enter ur name`)
+      return
+   }
+   else return `${username} just logged in!!`
+}
+
+let msg = userMsg("Arnesha")
+console.log(msg)
+console.log(userMsg("abc"))
+console.log(userMsg())
